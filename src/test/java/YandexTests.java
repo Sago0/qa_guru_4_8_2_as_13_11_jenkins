@@ -6,12 +6,12 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 
-public class YandexTests extends YandexTestBase {
+public class YandexTests extends TestBase {
 
     @Test
     void selenideSearchTest() {
         // Открыть yandex
-        open(Configuration.baseUrl);
+        open("https://yandex.by/");
         // Ввести Selenide в поиск
         $("#text").setValue("Selenide").pressEnter();
 
