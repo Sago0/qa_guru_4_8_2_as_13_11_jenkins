@@ -1,7 +1,8 @@
 package tests.properties;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-
+//@Tag("some")
 public class SystemPropertiesTests {
     @Test
     void someTest1() {
@@ -23,12 +24,13 @@ public class SystemPropertiesTests {
         System.out.println(version);
     }
     @Test
+    @Tag("some4")
     void someTest4() {
-        String resolution = System.getProperty("resolution", "2560x1440");
+        String browserSize = System.getProperty("browserSize", "2560x1440");
         String version = System.getProperty("version", "100");
         String browser = System.getProperty("browser", "chrome");
         System.out.println(browser);
         System.out.println(version);
-        System.out.println(resolution);
+        System.out.println(browserSize);
     }
 }
