@@ -33,4 +33,12 @@ public class SystemPropertiesTests {
         System.out.println(version);
         System.out.println(browserSize);
     }
+    @Test
+    @Tag("some4")
+    void someTest5() {
+        String version = System.getProperty("version", "100");
+        String browser = System.getProperty("browser", "chrome");
+        System.out.println(browser);
+        System.out.println(version);
+    }
 }
