@@ -2,7 +2,6 @@ package tests.properties;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-//@Tag("some")
 public class SystemPropertiesTests {
     @Test
     void someTest1() {
