@@ -14,6 +14,7 @@ public class TestBase {
     static void setup() {
         Configuration.browserSize = "2560x1440";
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+//        String urlSelenoid = System.getProperty("urlSelenoid");
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
